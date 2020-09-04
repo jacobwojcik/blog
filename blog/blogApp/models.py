@@ -5,6 +5,7 @@ from django.db import models
 
 class Post(models.Model):
     post_author = models.CharField(max_length=50)
+    post_title = models.CharField(max_length=50)
     post_body = models.CharField(max_length=5000)
     post_date = models.DateTimeField('date published')
 
