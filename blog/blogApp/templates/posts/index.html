@@ -1,39 +1,108 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% load static %}
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'posts/style.css' %}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Jacob's Blog</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
   </head>
   <body>
     <header>
       <nav>
-        <li>
-          <a> Home </a>
-        </li>
-        <li>
-          <a> About </a>
-        </li>
-        <li>
-          <a> Contact </a>
-        </li>
+        <h1>JacobW</h1>
+        <ul>
+          <li>
+            <a href="/"> Home </a>
+          </li>
+          <li>
+            <a href="https://github.com/jacobwojcik"> Portfolio </a>
+          </li>
+          <li>
+            <a href="/contact"> Contact </a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <h1>Welcome to my blog</h1>
+    <section class="title-bar">
+      <h1>Welcome to my blog</h1>
+    </section>
     <main>
-      <div>
+      <div class="posts-outer">
         {% for post in posts_list %}
-        <div>
-          <a href="/post/{{ post.id }}">{{ post.post_title }}</a>
-          <p>{{ post.post_body }}</p>
-          <small>{{ post.post_date }}</small>
+        <div class="post">
+          <div>
+            <img src="../../static/posts/images/coding.jpeg" />
+          </div>
+          <div class="post-text">
+            <div class="post-title">
+              <h1>
+                <a href="/post/{{ post.id }}">{{ post.post_title }}</a>
+              </h1>
+            </div>
+            <div class="post-body">
+              <p>{{ post.post_body }}</p>
+            </div>
+            <div class="post-date">
+              <small>{{ post.post_date }}</small>
+            </div>
+          </div>
+          <span class="animated-span"> </span>
         </div>
         {% endfor %}
       </div>
     </main>
+    <footer>
+      <div>
+        <div>
+          <p>© 2020 BLOG | Jakub Wójcik | Privacy</p>
+        </div>
+        <div class="footer-icons">
+          <ul>
+            <li>
+              <a href="https://github.com/jacobwojcik">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jacobwojcik">
+                <i class="fa fa-globe fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jkbwojcik/">
+                <i class="fa fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/jkbwojcik/">
+                <i class="fa fa-facebook-f fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <script src="" async defer></script>
   </body>
 </html>
