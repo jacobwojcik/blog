@@ -13,9 +13,71 @@
       type="text/css"
       href="{% static 'posts/style.css' %}"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'posts/postStyle.css' %}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <header>
+      <nav>
+        <h1>JacobW</h1>
+        <ul>
+          <li>
+            <a href="/"> Home </a>
+          </li>
+          <li>
+            <a href="https://github.com/jacobwojcik"> Portfolio </a>
+          </li>
+          <a href="/contact">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
     {% block content %} {% endblock content %}
+    <footer>
+      <div>
+        <div>
+          <p>© 2020 BLOG | Jakub Wójcik | Privacy</p>
+        </div>
+        <div class="footer-icons">
+          <ul>
+            <li>
+              <a href="https://github.com/jacobwojcik">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jacobwojcik">
+                <i class="fa fa-globe fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jkbwojcik/">
+                <i class="fa fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/jkbwojcik/">
+                <i class="fa fa-facebook-f fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="" async defer></script>
   </body>
 </html>

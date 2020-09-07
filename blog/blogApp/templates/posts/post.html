@@ -1,4 +1,22 @@
 {% extends "posts/base.html" %} {% block content %}
-<h1>{{post.post_body}}</h1>
+<section class="post-section">
+  <div class="heading-outer">
+    <div class="heading">
+      <div>
+        <img src="{{post.post_image.url}}" />
+      </div>
+      <div class="post-info">
+        <h3>Author: {{post.post_author}}</h3>
+        <h1>{{post.post_title}}</h1>
+        <p>{{post.post_date}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="post-text">
+    <div>
+      <p>{{post.post_body}}</p>
+    </div>
+  </div>
+</section>
 
 {% endblock content %}
