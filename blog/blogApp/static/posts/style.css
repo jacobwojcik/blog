@@ -38,6 +38,17 @@ header > nav > ul {
   font-weight: bolder;
   width: 70%;
 }
+header > nav > ul > a > li {
+  border: 3px solid rgb(247, 150, 22);
+  padding: 5px;
+  background-color: rgb(247, 150, 22);
+  color: white;
+  transition: 300ms ease-in-out;
+}
+header > nav > ul > a > li:hover {
+  background-color: white;
+  color: rgb(247, 150, 22);
+}
 
 .title-bar {
   padding-top: 100px;

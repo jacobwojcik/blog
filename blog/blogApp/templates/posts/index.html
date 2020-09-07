@@ -37,9 +37,9 @@
           <li>
             <a href="https://github.com/jacobwojcik"> Portfolio </a>
           </li>
-          <li>
-            <a href="/contact"> Contact </a>
-          </li>
+          <a href="/contact">
+            <li>Contact</li>
+          </a>
         </ul>
       </nav>
     </header>
@@ -51,8 +51,9 @@
         {% for post in posts_list %}
         <div class="post">
           <div>
-            <img src="../../static/posts/images/coding.jpeg" />
+            <img src="{{post.post_image.url}}" />
           </div>
+
           <div class="post-text">
             <div class="post-title">
               <h1>
