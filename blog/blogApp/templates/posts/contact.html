@@ -1,0 +1,48 @@
+{% extends "posts/base.html" %} {% block content %}
+<section class="contact">
+  <div class="contact-outer">
+    <div class="contact-first">
+      <h1>How can I help?</h1>
+
+      <form class="contact-form" method="POST" action="/">
+        <input placeholder="Your email" type="email" />
+        {% csrf_token %}
+        <textarea
+          placeholder="Message (remember, short & sweet please)"
+          name="message"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="contact-outer2">
+    <div class="contact-second">
+      <h1>Or connect with me on...</h1>
+      <span></span>
+      <div class="icons">
+        <div>
+          <a href="https://www.facebook.com/jkbwojcik/">
+            <i class="fa fa-linkedin fa-3x" color="white"></i> </a
+          >Linkedin
+        </div>
+        <div>
+          <a href="https://www.facebook.com/jkbwojcik/">
+            <i class="fa fa-facebook-f fa-3x" color="white"></i> </a
+          >Facebook
+        </div>
+        <div>
+          <a href="https://www.facebook.com/jkbwojcik/">
+            <i class="fa fa-github fa-3x" color="white"></i> </a
+          >Github
+        </div>
+        <div>
+          <a href="https://www.facebook.com/jkbwojcik/">
+            <i class="fa fa-envelope fa-3x" color="white"></i> </a
+          >Email
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
