@@ -4,12 +4,13 @@
     <div class="contact-first">
       <h1>How can I help?</h1>
 
-      <form class="contact-form" method="POST" action="/">
-        <input placeholder="Your email" type="email" />
+      <form class="contact-form" method="post">
+        <input placeholder="Your email" type="email" name="mail" required />
         {% csrf_token %}
         <textarea
           placeholder="Message (remember, short & sweet please)"
           name="message"
+          required
         ></textarea>
         <button type="submit">Send</button>
       </form>
