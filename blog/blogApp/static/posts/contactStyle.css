@@ -100,3 +100,33 @@
 .icons > div > a > i {
   padding-top: 10px;
 }
+
+/* THANKS PAGE */
+.thanks-section {
+  padding-top: 100px;
+  min-height: 90vh;
+}
+.thanks-section > div {
+  background-color: rgb(255, 76, 32);
+  color: white;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.thanks-section > div > h1 {
+  font-size: 40px;
+  padding: 1em;
+}
+.thanks-section > div > h2 {
+  font-size: 30px;
+  padding-bottom: 1em;
+  color: rgb(61, 60, 63);
+}
+.thanks-section > div > span {
+  background-color: white;
+  width: 50px;
+  height: 3px;
+}
