@@ -24,9 +24,11 @@ header > nav {
   margin: 0 15%;
   padding: 2em;
 }
-header > nav > h1 {
+header > nav > div {
   width: 30%;
-  color: rgb(255, 76, 32);
+}
+header > nav > img {
+  height: 40px;
 }
 header > nav > ul {
   display: flex;
@@ -48,6 +50,21 @@ header > nav > ul > a > li {
 header > nav > ul > a > li:hover {
   background-color: white;
   color: rgb(255, 76, 32);
+}
+.burger {
+  display: none;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.burger > span {
+  position: relative;
+  width: 36px;
+  height: 4px;
+  background-color: rgb(61, 60, 63);
+  margin: 8px;
+  display: block;
+  transition: 500ms;
 }
 
 .title-bar {
@@ -174,7 +191,28 @@ footer > div {
 }
 
 @media screen and (max-width: 768px) {
-  .posts-outer {
+  header > nav > ul {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: rgb(255, 76, 32);
+    width: 100%;
+    height: calc(100vh - 100px);
+    color: white;
+    /* transform: translateX(100%); */
+    transition: 400ms;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header > nav {
+    justify-content: flex-start;
+  }
+  .burger {
+    display: block;
+  }
+  . .posts-outer {
     margin: 0;
   }
 }
