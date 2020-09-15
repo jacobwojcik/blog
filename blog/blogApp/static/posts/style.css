@@ -21,8 +21,8 @@ header > nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0 15%;
-  padding: 2em;
+  margin: 0 10%;
+  padding: 2em 0;
 }
 header > nav > div {
   width: 30%;
@@ -115,7 +115,7 @@ header > nav > ul > a > li:hover {
 }
 
 .posts-outer {
-  margin: 0 15%;
+  margin: 0 10%;
   padding: 2em 0;
   display: flex;
   justify-content: space-around;
@@ -124,7 +124,7 @@ header > nav > ul > a > li:hover {
 }
 .post {
   position: relative;
-  margin: 10px;
+  margin: 10px 5px;
   padding: 1em;
   height: 400px;
   width: 400px;
@@ -132,7 +132,6 @@ header > nav > ul > a > li:hover {
   justify-content: space-around;
   align-items: center;
   flex-flow: column;
-
   transition: 300ms ease-in-out;
 }
 .animated-span {
@@ -219,9 +218,6 @@ footer > div {
 }
 
 @media screen and (max-width: 768px) {
-  header nav {
-    margin: 0;
-  }
   header > nav > ul {
     position: absolute;
     left: 0;
@@ -243,7 +239,13 @@ footer > div {
   .burger {
     display: block;
   }
-  . .posts-outer {
+  #title-h1 {
+    font-size: 35px;
+  }
+  #title-h1::after {
+    height: 10%;
+  }
+  .posts-outer {
     margin: 0;
   }
 }
@@ -269,7 +271,13 @@ footer > div {
     list-style: none;
   }
 }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 380px) {
+  #title-h1 {
+    font-size: 28px;
+  }
+  #title-h1::after {
+    height: 8%;
+  }
   footer > div > div > p {
     text-align: center;
   }
