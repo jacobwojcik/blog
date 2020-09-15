@@ -1,6 +1,6 @@
 {% extends "posts/base.html" %} {% block content %}
 <section class="title-bar">
-  <h1>Welcome to my blog</h1>
+  <h1 id="title-h1"></h1>
 </section>
 <main>
   <div class="posts-outer">
@@ -17,7 +17,7 @@
           </h1>
         </div>
         <div class="post-body">
-          <p>{{ post.post_body }}</p>
+          <p>{{post.post_body | safe}}</p>
         </div>
         <div class="post-date">
           <small>{{ post.post_date }}</small>
