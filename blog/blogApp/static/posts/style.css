@@ -27,7 +27,7 @@ header > nav {
 header > nav > div {
   width: 30%;
 }
-header > nav > img {
+header > nav > a > img {
   height: 40px;
 }
 header > nav > ul {

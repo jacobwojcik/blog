@@ -11,4 +11,6 @@ const type = () => {
   titleBar.textContent = titleText.slice(0, index);
   index++;
 };
-setInterval(type, 350);
+if (titleBar) {
+  setInterval(type, 350);
+}
