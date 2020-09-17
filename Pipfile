@@ -12,6 +12,7 @@ django = "*"
 requests = "*"
 python-decouple = "*"
 django-ckeditor = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
