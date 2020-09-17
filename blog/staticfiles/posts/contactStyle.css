@@ -1,0 +1,163 @@
+.contact {
+  padding-top: 100px;
+  min-height: 90vh;
+}
+.contact-outer {
+  background-color: rgb(255, 76, 32);
+  height: calc(100vh - 100px);
+}
+.contact-outer2 {
+  margin: 0 15%;
+  background-color: white;
+  height: calc(100vh - 100px);
+}
+.contact-first {
+  margin: 0 15%;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.contact-first > h1 {
+  font-size: 40px;
+}
+.contact-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70%;
+  width: 100%;
+  padding: 1em;
+}
+.contact-form > input {
+  padding: 0.5em;
+  border: none;
+  border-bottom: 4px solid white;
+  outline: none;
+  background-color: inherit;
+  color: white;
+  width: 100%;
+  font-size: 24px;
+}
+.contact-form > input::placeholder,
+.contact-form > textarea::placeholder {
+  color: white;
+}
+.contact-form > textarea {
+  height: 100px;
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(182, 174, 174, 0.425);
+  resize: none;
+}
+.contact-form > button {
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+
+  outline: none;
+  background-color: white;
+  color: rgb(255, 76, 32);
+
+  font-size: 20px;
+}
+
+.contact-second {
+  color: grey;
+  background-color: white;
+  padding: 3em 1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.contact-second > span {
+  background-color: rgb(255, 76, 32);
+  width: 50px;
+  height: 3px;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+.icons > div {
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: center;
+}
+.icons > div > a > i {
+  padding-top: 10px;
+  margin: 0 10px;
+}
+
+/* THANKS PAGE */
+.thanks-section {
+  padding-top: 100px;
+  min-height: 90vh;
+}
+.thanks-section > div {
+  background-color: rgb(255, 76, 32);
+  color: white;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.thanks-section > div > h1 {
+  font-size: 40px;
+  padding: 1em;
+}
+.thanks-section > div > h2 {
+  font-size: 30px;
+  padding-bottom: 1em;
+  color: rgb(61, 60, 63);
+}
+.thanks-section > div > span {
+  background-color: white;
+  width: 50px;
+  height: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-first {
+    margin: 0 5%;
+  }
+  .contact-first > h1 {
+    font-size: 35px;
+  }
+  .contact-form {
+    height: 80%;
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  .contact-form > textarea {
+    height: 120px;
+  }
+  .contact-second {
+    text-align: center;
+  }
+  .thanks-section > div > h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .thanks-section > div > h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
